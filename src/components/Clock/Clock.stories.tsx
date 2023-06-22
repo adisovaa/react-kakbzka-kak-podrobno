@@ -2,11 +2,16 @@ import React from "react";
 import {Clock} from "./Clock";
 
 export default {
-    title: 'Clock',
-    component: Clock
+    mode: 'digital' || 'analog'
 }
 
-export const BaseExample = () => {
+export const BaseAnalogExample = () => {
+    return <>
+        <Clock/>
+    </>
+}
+
+export const BaseDigitalExample = () => {
     return <>
         <Clock/>
     </>
